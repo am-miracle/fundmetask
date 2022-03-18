@@ -7,18 +7,18 @@ function App() {
     <div className="">
       <Navbar />
         <main className='container flex flex-col justify-center items-center lg:flex-row-reverse lg:h-full lg:w-full lg:justify-around py-10'>
-          <figure className='w-1/4 h-1/4 lg:w-2/5 lg:h-2/5'>
+          <figure className='w-full h-full lg:w-2/5 lg:h-2/5 mb-4'>
             <img src={Landing} alt='landing' />
           </figure>
           <div className="">
-            <div className='leading-10'>
-              <h1 className="text-4xl">
+            <div className='leading-10 text-center lg:text-left'>
+              <h1 className="text-2xl lg:text-4xl">
                 <p>Make things simple &</p>
                 <p><strong>Transaction</strong> clear</p>
               </h1>
-              <p className="text-xl my-4">A new way for requesting funding <br/>from friends and the public.</p>
+              <p className="text-sm lg:text-xl my-4">A new way for requesting funding <br/>from friends and the public.</p>
+              <button data-modal-toggle="authentication-modal" type="button" className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Create a request</button>
             </div>
-            <button data-modal-toggle="authentication-modal" type="button" className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Create a request</button>
             {/* <!-- Main modal --> */}
             <div id="authentication-modal" aria-hidden="true" className="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
                 <div className="relative px-4 w-full max-w-md h-full md:h-auto">
